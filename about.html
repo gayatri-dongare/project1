@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>About Us</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    padding:40px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#moreInfo{
+    display:none;
+    margin-top:20px;
+}
+</style>
+
 </head>
+
 <body>
-    <div>Welcome to about page</div>
+
+<h1>About Us</h1>
+
+<p>This website provides useful information and simple tools for users.</p>
+
+<button onclick="showInfo()">Learn More</button>
+
+<div id="moreInfo">
+    <h2>Our Mission</h2>
+    <p>To create simple and helpful web applications.</p>
+
+    <h2>Our Vision</h2>
+    <p>To make technology easy and accessible for everyone.</p>
+
+    <h2>Our Team</h2>
+    <p>We are passionate developers who enjoy building websites.</p>
+</div>
+
+<script>
+function showInfo(){
+    var info = document.getElementById("moreInfo");
+
+    if(info.style.display === "none"){
+        info.style.display = "block";
+    }else{
+        info.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>
